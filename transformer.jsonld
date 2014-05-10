@@ -1,0 +1,8 @@
+{
+ "@context": "http://transformer.io/context/transformer.jsonld",
+ "type": "conversion",
+ "input": "js-date",
+ "output": "iso-date",
+ "id": "js-date-to-iso-date",
+ "description": "js-date to iso-date"
+}
