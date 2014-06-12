@@ -1,9 +1,9 @@
-var transformer = require('dat-transformer');
-var tJsDate = transformer('js-date');
-var tIsoDate = transformer('iso-date');
+var Conversion = require('transformer-conversion');
+var tJsDate = require('transformer.js-date');
+var tIsoDate = require('transformer.iso-date');
 // require any other modules you may need here.
 
-module.exports = transformer.Conversion(tJsDate, tIsoDate, convert);
+module.exports = Conversion(tJsDate, tIsoDate, convert);
 
 function convert(jsDate) {
   return jsDate.toISOString();
